@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit de Estudos — Matemática 7º ano | Central de Engenharia</title>
+<style>
+  :root{
+    --bg:#0b1f33; --bg2:#0e2740; --painel:#10314f; --linha:#1d4b74;
+    --ciano:#4cc9f0; --branco:#eaf4fb; --cinza:#9fbdd6;
+    --verde:#37d67a; --amarelo:#ffd23f; --laranja:#ff9f45; --roxo:#b28dff;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; padding:0; font-family:"Segoe UI",Arial,sans-serif; color:var(--branco);
+    background:
+      linear-gradient(rgba(11,31,51,.94),rgba(11,31,51,.97)),
+      repeating-linear-gradient(0deg, transparent 0 39px, rgba(76,201,240,.08) 39px 40px),
+      repeating-linear-gradient(90deg, transparent 0 39px, rgba(76,201,240,.08) 39px 40px),
+      var(--bg);
+    line-height:1.6;}
+  .wrap{max-width:900px; margin:0 auto; padding:24px 16px 80px;}
+  header.topo{text-align:center; padding:30px 20px; border:1.5px solid var(--linha); border-radius:18px;
+    background:linear-gradient(135deg,var(--bg2),var(--painel)); margin-bottom:22px;}
+  header.topo .selo{display:inline-block; font-size:13px; letter-spacing:2px; color:var(--ciano);
+    border:1px solid var(--ciano); padding:4px 14px; border-radius:20px; margin-bottom:12px; text-transform:uppercase;}
+  header.topo h1{margin:8px 0 6px; font-size:30px; color:#fff;}
+  header.topo p{margin:0; color:var(--cinza); font-size:15px;}
+  header.topo .prova{display:inline-block; margin-top:12px; background:rgba(255,159,69,.15); border:1px solid var(--laranja);
+    color:var(--laranja); padding:6px 16px; border-radius:20px; font-weight:bold; font-size:14px;}
+
+  .secTit{font-size:15px; color:var(--ciano); text-transform:uppercase; letter-spacing:1px; margin:24px 0 12px;}
+  .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px;}
+  a.card{display:block; text-decoration:none; color:var(--branco); background:linear-gradient(135deg,var(--bg2),var(--painel));
+    border:1.5px solid var(--linha); border-radius:16px; padding:20px; transition:.18s; position:relative; overflow:hidden;}
+  a.card:hover{transform:translateY(-4px); border-color:var(--ciano); box-shadow:0 8px 22px rgba(0,0,0,.35);}
+  a.card .passo{position:absolute; top:12px; right:14px; font-size:12px; font-weight:bold; color:var(--bg);
+    background:var(--ciano); border-radius:20px; padding:2px 12px;}
+  a.card .ic{font-size:34px;}
+  a.card h3{margin:10px 0 6px; font-size:19px; color:#fff;}
+  a.card p{margin:0; font-size:14px; color:var(--cinza);}
+  a.card.extra{border-style:dashed;}
+  a.card.extra .passo{background:var(--roxo);}
+
+  .plano{background:linear-gradient(135deg,var(--bg2),var(--painel)); border:1px solid var(--linha);
+    border-radius:16px; padding:20px 24px; margin-top:22px;}
+  .plano h2{color:var(--amarelo); font-size:18px; margin:0 0 10px;}
+  .plano ol{margin:0; padding-left:20px;}
+  .plano li{margin:8px 0;}
+  .plano b{color:var(--ciano);}
+
+  .dica{background:rgba(55,214,122,.08); border:1px solid var(--verde); border-radius:16px; padding:20px 24px; margin-top:18px;}
+  .dica h2{color:var(--verde); font-size:18px; margin:0 0 8px;}
+  .dica p{margin:6px 0; font-size:15px;}
+  .dica code{background:#071b2e; border:1px solid var(--linha); border-radius:6px; padding:2px 8px; color:var(--amarelo); font-family:"Consolas",monospace;}
+
+  footer{text-align:center; color:var(--cinza); font-size:13px; margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topo">
+    <span class="selo">Central de Engenharia • Projeto Matemática</span>
+    <h1>📐 Kit de Estudos — Matemática 7º ano</h1>
+    <p>Colégio Coração Feliz<br>Cap. 9 Volume • Cap. 10 Expressões algébricas • Cap. 12 Equações do 1º grau</p>
+    <div class="prova">📅 Prova: Avaliação Mensal 1 — 10/09/2026</div>
+  </header>
+
+  <div class="secTit">Estude nesta ordem 👇</div>
+  <div class="cards">
+    <a class="card" href="leitura_estendida.html">
+      <span class="passo">Passo 1</span>
+      <div class="ic">📖</div>
+      <h3>Leitura Estendida</h3>
+      <p>Aprenda cada assunto e treine em 6 estações. Só avança quem acerta 70% — assim você fixa antes de seguir.</p>
+    </a>
+    <a class="card" href="resumo.html">
+      <span class="passo">Passo 2</span>
+      <div class="ic">🗺️</div>
+      <h3>Resumo</h3>
+      <p>Todas as regras, macetes, pegadinhas, cartas de treino e glossário reunidos. Ótimo para revisar rápido.</p>
+    </a>
+    <a class="card" href="simulado.html">
+      <span class="passo">Passo 3</span>
+      <div class="ic">📝</div>
+      <h3>Simulado</h3>
+      <p>28 questões no estilo da prova (múltipla escolha, somatório, afirmativas e discursiva). Com código e gabarito comentado.</p>
+    </a>
+    <a class="card extra" href="folha_de_problemas.html">
+      <span class="passo">Passo 4</span>
+      <div class="ic">✏️</div>
+      <h3>Folha de Problemas</h3>
+      <p>5 situações-problema no jeitão da professora. Mostre os cálculos e confira só o certo/errado. Dá para imprimir.</p>
+    </a>
+  </div>
+
+  <div class="secTit">Material extra para imprimir 🖨️</div>
+  <div class="cards">
+    <a class="card extra" href="mapa_mental_folha_de_regras.pdf">
+      <span class="passo">Extra</span>
+      <div class="ic">📄</div>
+      <h3>Folha de Regras (PDF)</h3>
+      <p>Uma página A4 com todas as fórmulas e macetes por cor. Imprima e deixe na mesa de estudo.</p>
+    </a>
+  </div>
+
+  <div class="plano">
+    <h2>📅 Como usar este kit</h2>
+    <ol>
+      <li><b>Comece pela Leitura Estendida:</b> leia e responda a fixação de cada estação (é preciso 70% para avançar).</li>
+      <li><b>Revise com o Resumo:</b> reforce as regras e vire as cartas de treino.</li>
+      <li><b>Faça o Simulado:</b> responda tudo, pegue o código e depois veja o gabarito comentado.</li>
+      <li><b>Treine com a Folha de Problemas:</b> resolva mostrando as contas, como na prova de verdade.</li>
+      <li><b>Imprima a Folha de Regras</b> para consultar durante os estudos.</li>
+    </ol>
+  </div>
+
+  <div class="dica">
+    <h2>👩‍👦 Dica para o responsável</h2>
+    <p>No <b>Simulado</b>, ao terminar, a criança recebe um <b>código de liberação</b> no formato <code>SIM-XX-YY</code> (o XX mostra quantas questões objetivas ela acertou). O gabarito só abre depois de digitar esse código — assim você confere que ela realmente terminou antes de ver as respostas.</p>
+    <p>A <b>Folha de Problemas</b> tem gabarito travado: o botão "Ver resultado" só libera quando os 5 problemas estão marcados, e mostra apenas <b>acertou/errou</b> (verde = correta; vermelho = a que a criança marcou errada), incentivando ela a mostrar os cálculos.</p>
+    <p>A questão <b>discursiva</b> do simulado é corrigida por você com a resposta modelo que aparece no gabarito.</p>
+  </div>
+
+  <footer>Feito com carinho para os estudos do jovem aprendiz • Central de Engenharia — Projeto Matemática</footer>
+</div>
+</body>
+</html>
